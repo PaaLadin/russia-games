@@ -1,0 +1,51 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: #1a1218;
+  color: #f0e0d0;
+  font-family: "Georgia", serif;
+  display: flex; justify-content: center; align-items: center;
+  min-height: 100vh;
+}
+#app { text-align: center; max-width: 620px; }
+h1 {
+  font-size: 28px; letter-spacing: 10px; color: #d8a850;
+  text-shadow: 0 0 18px rgba(216,168,80,.5);
+}
+#hud {
+  display: flex; gap: 22px; justify-content: center;
+  margin: 8px 0 12px; font-size: 15px; color: #c8a888;
+}
+#hud b { color: #d8a850; }
+canvas {
+  background: #2a1a20;
+  border: 2px solid #4a3028;
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(200,120,60,.15);
+  display: block; margin: 0 auto;
+}
+#gauges { display: flex; gap: 26px; justify-content: center; margin: 12px 0 8px; }
+.gauge { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #c8a888; }
+.bar { width: 130px; height: 12px; background: #2a1a20; border: 1px solid #4a3028; border-radius: 6px; overflow: hidden; }
+#coal-bar { height: 100%; width: 40%; background: linear-gradient(90deg, #d8a850, #e05020); transition: width .25s; }
+#tea-bar { height: 100%; width: 0%; background: linear-gradient(90deg, #a05020, #d89040); transition: width .25s; }
+#coal-val, #tea-val { min-width: 42px; text-align: left; color: #d8a850; }
+#controls { display: flex; gap: 9px; justify-content: center; margin: 10px 0; }
+button {
+  background: #2a1a20; color: #d8a850;
+  border: 1px solid #6a4020; border-radius: 5px;
+  padding: 7px 15px; cursor: pointer;
+  font-family: inherit; font-size: 14px;
+}
+button:hover { background: #3a2428; }
+button:disabled { opacity: .4; cursor: default; }
+#hint { font-size: 14px; color: #c8a888; margin-top: 6px; }
+#hint b { color: #e8c070; }
+#win {
+  position: fixed; inset: 0;
+  background: rgba(26,18,24,.94);
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center; gap: 14px;
+}
+#win.hidden { display: none; }
+#win h2 { font-size: 28px; letter-spacing: 6px; color: #d8a850; }
+#end-text { color: #c8a888; max-width: 460px; }

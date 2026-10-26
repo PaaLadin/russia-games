@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Матрёшка — рекурсивный паззл</title>
+<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/qa.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>МАТРЁШКА</h1>
+    <div id="hud">
+      <span>Слой: <b id="layer">1</b>/5</span>
+      <span>Ходы: <b id="moves">0</b></span>
+      <button id="btn-reset">Заново</button>
+    </div>
+  </header>
+  <canvas id="view" width="520" height="520"></canvas>
+  <p id="hint">Поверни фрагменты так, чтобы узор совпал с образцом.</p>
+  <div id="win" class="hidden">
+    <h2>КУКЛА СОБРАНА</h2>
+    <p>Все 5 слоёв раскрыты.</p>
+    <button id="btn-again">Ещё раз</button>
+  </div>
+</div>
+<script src="js/game.js"></script>
+  <script src="js/qa.js"></script>
+</body>
+</html>

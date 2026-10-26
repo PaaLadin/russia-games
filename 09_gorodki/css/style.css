@@ -1,0 +1,52 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: #1a2010;
+  color: #f0ecd0;
+  font-family: "Georgia", serif;
+  display: flex; justify-content: center; align-items: center;
+  min-height: 100vh;
+}
+#app { text-align: center; max-width: 700px; }
+h1 {
+  font-size: 28px; letter-spacing: 12px; color: #d8c060;
+  text-shadow: 0 0 18px rgba(216,192,96,.5);
+}
+#hud {
+  display: flex; gap: 24px; justify-content: center;
+  margin: 8px 0 12px; font-size: 15px; color: #b8b080;
+}
+#hud b { color: #d8c060; }
+canvas {
+  background: #2a3018;
+  border: 2px solid #4a5028;
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(160,180,80,.12);
+  display: block; margin: 0 auto;
+}
+#controls {
+  display: flex; gap: 20px; justify-content: center; align-items: center;
+  margin: 14px 0; flex-wrap: wrap;
+}
+.slider { display: flex; align-items: center; gap: 8px; font-size: 14px; color: #b8b080; }
+.slider label { min-width: 40px; }
+.slider input[type=range] { width: 120px; accent-color: #d8c060; }
+.slider span { min-width: 30px; color: #d8c060; font-weight: bold; }
+button {
+  background: #2a3018; color: #d8c060;
+  border: 1px solid #6a7030; border-radius: 5px;
+  padding: 10px 28px; cursor: pointer;
+  font-family: inherit; font-size: 15px; font-weight: bold;
+  letter-spacing: 2px;
+}
+button:hover { background: #3a4422; }
+button:disabled { opacity: .4; cursor: default; }
+#hint { font-size: 13px; color: #8a9060; margin-top: 6px; }
+#win {
+  position: fixed; inset: 0;
+  background: rgba(26,32,16,.94);
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center; gap: 14px;
+}
+#win.hidden { display: none; }
+#win h2 { font-size: 28px; letter-spacing: 6px; color: #d8c060; }
+#end-text { color: #b8b080; max-width: 460px; }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Баня — симулятор парения</title>
+<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/qa.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>БАНЯ</h1>
+    <div id="hud">
+      <span>Гость: <b id="guest">1</b>/5</span>
+      <span>Очки: <b id="score">0</b></span>
+    </div>
+  </header>
+  <canvas id="view" width="600" height="420"></canvas>
+  <div id="gauges">
+    <div class="gauge">
+      <label>Жар</label>
+      <div class="bar"><div id="heat-bar"></div></div>
+      <span id="heat-val">60°</span>
+    </div>
+    <div class="gauge">
+      <label>Пар</label>
+      <div class="bar"><div id="steam-bar"></div></div>
+      <span id="steam-val">0%</span>
+    </div>
+  </div>
+  <div id="controls">
+    <button data-act="wood">Дров</button>
+    <button data-act="water">Воды</button>
+    <button data-act="venik">Веник</button>
+    <button data-act="vent">Отдушина</button>
+    <button data-act="rest">Ждать</button>
+  </div>
+  <p id="hint">Гость хочет: <b id="want">?</b></p>
+  <div id="win" class="hidden">
+    <h2>ВСЕ ДОВОЛЬНЫ</h2>
+    <p>Счёт: <b id="final-score">0</b></p>
+    <button id="btn-again">Ещё раз</button>
+  </div>
+</div>
+<script src="js/game.js"></script>
+  <script src="js/qa.js"></script>
+</body>
+</html>

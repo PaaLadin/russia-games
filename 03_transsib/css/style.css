@@ -1,0 +1,52 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: #0e1420;
+  color: #dde6f0;
+  font-family: "Georgia", serif;
+  display: flex; justify-content: center; align-items: center;
+  min-height: 100vh;
+}
+#app { text-align: center; max-width: 660px; }
+h1 {
+  font-size: 30px; letter-spacing: 10px; color: #6aa8d8;
+  text-shadow: 0 0 18px rgba(106,168,216,.5);
+}
+#hud {
+  display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+  margin: 8px 0 12px; font-size: 14px; color: #9ab0c8;
+}
+#hud b { color: #6ad8a8; }
+canvas {
+  background: #182030;
+  border: 2px solid #2a3a52;
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(60,120,200,.15);
+  display: block; margin: 0 auto;
+}
+#log {
+  height: 96px; overflow-y: auto;
+  background: #101828; border: 1px solid #2a3a52; border-radius: 6px;
+  margin: 12px 0; padding: 8px 12px;
+  font-size: 13px; line-height: 1.5; text-align: left;
+  color: #b0c4d8;
+}
+#log div { border-bottom: 1px solid rgba(60,90,120,.2); padding: 2px 0; }
+#controls { display: flex; gap: 10px; justify-content: center; }
+button {
+  background: #182030; color: #6aa8d8;
+  border: 1px solid #2a5a8a; border-radius: 5px;
+  padding: 8px 20px; cursor: pointer;
+  font-family: inherit; font-size: 14px;
+  transition: background .15s;
+}
+button:hover { background: #203048; }
+button:disabled { opacity: .4; cursor: default; }
+#win {
+  position: fixed; inset: 0;
+  background: rgba(14,20,32,.94);
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center; gap: 14px;
+}
+#win.hidden { display: none; }
+#win h2 { font-size: 30px; letter-spacing: 6px; color: #6ad8a8; }
+#end-text { font-size: 16px; color: #9ab0c8; max-width: 480px; }

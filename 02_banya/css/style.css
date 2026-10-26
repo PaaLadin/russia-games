@@ -1,0 +1,73 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: #1a0f08;
+  color: #f0e0cc;
+  font-family: "Georgia", serif;
+  display: flex; justify-content: center; align-items: center;
+  min-height: 100vh;
+}
+#app { text-align: center; }
+header { margin-bottom: 10px; }
+h1 {
+  font-size: 32px; letter-spacing: 10px; color: #e8a04b;
+  text-shadow: 0 0 18px rgba(232,160,75,.5);
+}
+#hud {
+  display: flex; gap: 22px; justify-content: center;
+  margin-top: 6px; font-size: 15px; color: #c9a882;
+}
+#hud b { color: #e8a04b; }
+canvas {
+  background: #2a1810;
+  border: 2px solid #4a3020;
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(200,100,40,.15);
+  display: block; margin: 0 auto;
+}
+#gauges {
+  display: flex; gap: 30px; justify-content: center;
+  margin: 14px 0 10px;
+}
+.gauge { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+.gauge label { color: #c9a882; min-width: 40px; }
+.bar {
+  width: 160px; height: 14px;
+  background: #2a1810; border: 1px solid #4a3020; border-radius: 7px;
+  overflow: hidden;
+}
+#heat-bar {
+  height: 100%; width: 60%;
+  background: linear-gradient(90deg, #e8a04b, #e04020);
+  transition: width .3s;
+}
+#steam-bar {
+  height: 100%; width: 0%;
+  background: linear-gradient(90deg, #6aa8d8, #d8e8f0);
+  transition: width .3s;
+}
+#heat-val, #steam-val { min-width: 46px; text-align: left; color: #e8a04b; }
+#controls {
+  display: flex; gap: 10px; justify-content: center; margin: 12px 0;
+}
+button {
+  background: #2a1810; color: #e8a04b;
+  border: 1px solid #6a4020; border-radius: 5px;
+  padding: 7px 16px; cursor: pointer;
+  font-family: inherit; font-size: 14px;
+  transition: background .15s;
+}
+button:hover { background: #3a2418; }
+button:active { transform: translateY(1px); }
+#hint { margin-top: 8px; font-size: 15px; color: #c9a882; }
+#hint b { color: #e8c04b; }
+#win {
+  position: fixed; inset: 0;
+  background: rgba(26,15,8,.94);
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center; gap: 14px;
+}
+#win.hidden { display: none; }
+#win h2 {
+  font-size: 30px; letter-spacing: 6px; color: #e8a04b;
+  text-shadow: 0 0 20px rgba(232,160,75,.6);
+}

@@ -1,0 +1,10 @@
+# Бэкапы и temp
+*.bak_*
+*.log
+_shared/_tmp
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db

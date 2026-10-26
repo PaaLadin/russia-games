@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Русская печь — тайм-менеджмент томления</title>
+<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/qa.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>ПЕЧЬ</h1>
+    <div id="hud">
+      <span>Жар: <b id="heat">0</b>°</span>
+      <span>Блюд: <b id="dishes">0</b>/6</span>
+    </div>
+  </header>
+  <canvas id="view" width="580" height="380"></canvas>
+  <div id="pots"></div>
+  <div id="controls">
+    <button data-act="wood">Дров</button>
+    <button data-act="damper">Заслонку</button>
+    <button data-act="wait">Томить</button>
+  </div>
+  <div id="win" class="hidden">
+    <h2 id="end-title">ПЕЧЬ ИСТОПЛЕНА</h2>
+    <p id="end-text"></p>
+    <button id="btn-again">Ещё раз</button>
+  </div>
+</div>
+<script src="js/game.js"></script>
+  <script src="js/qa.js"></script>
+</body>
+</html>

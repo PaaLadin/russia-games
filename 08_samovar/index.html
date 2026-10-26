@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Самовар — чайная церемония</title>
+<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/qa.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>САМОВАР</h1>
+    <div id="hud">
+      <span>Гость: <b id="guest">1</b>/6</span>
+      <span>Очки: <b id="score">0</b></span>
+    </div>
+  </header>
+  <canvas id="view" width="560" height="420"></canvas>
+  <div id="gauges">
+    <div class="gauge"><label>Угли</label><div class="bar"><div id="coal-bar"></div></div><span id="coal-val">40%</span></div>
+    <div class="gauge"><label>Заварка</label><div class="bar"><div id="tea-bar"></div></div><span id="tea-val">0%</span></div>
+  </div>
+  <div id="controls">
+    <button data-act="coal">Угли</button>
+    <button data-act="tea">Заварка</button>
+    <button data-act="wait">Ждать</button>
+    <button data-act="serve">Налить</button>
+  </div>
+  <p id="hint">Гость хочет: <b id="want">?</b></p>
+  <div id="win" class="hidden">
+    <h2 id="end-title">ВСЕ НАПОЕНЫ</h2>
+    <p id="end-text"></p>
+    <button id="btn-again">Ещё раз</button>
+  </div>
+</div>
+<script src="js/game.js"></script>
+  <script src="js/qa.js"></script>
+</body>
+</html>
