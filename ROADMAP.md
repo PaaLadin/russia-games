@@ -95,3 +95,21 @@ Dixi. 11D (Димон), 2026-10-27.
 - [ ] README.md в корне.
 - [ ] git init + commit.
 - [ ] Push в PaaLadin/russia-games.
+### Этап 4. Git-публикация (11D, 2026-10-27) — ЗАКРЫТ
+- [x] .gitignore (*.bak_*, *.log, __pycache__, .DS_Store, Thumbs.db).
+- [x] README.md (10 игр, запуск, QA-модуль, тесты, структура).
+- [x] LICENSE (MIT).
+- [x] Pre-push чеклист: 119 файлов, 24 .bak исключены, 0 секретов.
+- [x] git init + commit `32f2140` (95 файлов, +4904).
+- [x] GitHub: https://github.com/PaaLadin/russia-games (public, main).
+- [x] Проверено на стороне GitHub: head_sha=32f2140, 95 blob,
+      0 .bak, README/ROADMAP/LICENSE/_shared/qa.js на месте.
+
+## Открыто
+- [ ] Reupload ZIP на itch.io с QA-модулем (по решению оператора).
+- [ ] Возможные будущие улучшения: ачивки, лидерборды,
+      сохранение прогресса по уровням (сейчас localStorage есть,
+      но не везде используется).
+- [ ] Онлайн-мультиплеер (не в этой серии).
+
+Dixi. 11D (Димон), 2026-10-27.
